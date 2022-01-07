@@ -1,0 +1,5 @@
+x=3
+y=7
+def f1(y,x):
+    return x-y
+print (f"{f1(y,x)}), {f1(x,y)"}
