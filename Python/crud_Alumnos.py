@@ -1,7 +1,7 @@
 import os
 
 def ingresar_nombre():
-    """ funcion para ingresar un nombre """
+    #Función para ingresar nombre
     while True:
         nombre = input("Ingrese el nombre del estudiante : ")
         if nombre=="":
@@ -11,7 +11,7 @@ def ingresar_nombre():
 	
  
 def ingresar_nota():
-    """ funcion para ingresar una nota """
+    # funcion para ingresar una nota 
     while True:
         try:
             nota = float(input("Ingrese la nota del estudiante (0-10):"))
@@ -27,8 +27,9 @@ def promedio_notas(lista_notas):
     """ funcion para mostrar el  promedio de notas de los estudiantes """
     if len(estudiantes)==0:
         return -1
-    return sum(lista_notas)/len(lista_notas)
- 
+    else:
+        return sum(lista_notas)/len(lista_notas)
+
 def Menu():
     print("""-------------------------------------------------------
     Selecciona una opción...
@@ -73,13 +74,10 @@ while True:
         pass
     elif opcion == 5:
         pass
-        
     elif opcion == 6:
-
         promedio= promedio_notas(notas)
         print(promedio)
         os.system("pause")
-        
     elif opcion == 7:
         pass
     elif opcion == 0:
